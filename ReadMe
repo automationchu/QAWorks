@@ -1,0 +1,21 @@
+I decided to change the Feature file a wee bit (my apologies for being presumptuous).
+The reason being for the change was to separate the code functionality from the 'Then' step, and use the
+'Then' step to perform some assertions. Hence, I added an extra step prior that would handle the data table
+functionality. Also I added an extra step to show that the user clicks on the Contact link.
+
+As this feature file is complementary to the Agile Methodology, this file is also seen as a form of 
+documentation. I find that when creating an acceptance test from the acceptance criteria, it is essential 
+for the criteria to be clear and unambiguous. Again, let me apologise (this is not a misguided attempt to be 'cocky')
+, I am just trying to cover all angles as regards the scope of this exercise.
+
+The bugs that I noticed were the following:
+
+1. The name field accepted 'j.Bloggs' as a valid name. There should be extra functionality to check that the name
+is actually valid. If not, it should return a text message to the user to input a valid name. 
+
+2. The user has no confirmation that their input details have been accepted by the QAWorks website.
+this could result in a user inputting their details several times over. Not good!
+
+I did the best I could with the assertions based upon the business logic of the Contact Page.
+The submit button would be disabled until all three fields had been populated. 
+

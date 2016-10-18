@@ -41,8 +41,12 @@ public class QaWorksStepDefintions {
 	
 	@Then("^QAWorks will be able to contact me$")
 	public void qaworks_will_be_able_to_contact_me() throws Throwable {
-		Assert.assertFalse(contactPage.validateNameInput());
-		Assert.assertFalse(contactPage.validateEmailInput());
+		Assert.assertTrue(!contactPage.validateNameInput());
+		Assert.assertTrue(!contactPage.validateEmailInput());
 		Assert.assertTrue(!contactPage.validateMessageText());
+		
 	}
+	
+	
+
 }

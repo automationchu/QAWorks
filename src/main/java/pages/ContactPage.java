@@ -51,7 +51,6 @@ public class ContactPage extends DriverFactory{
 	}
 	
 	public boolean validateNameInput(){
-		//driverFactory.getDriver().findElement(By.xpath("//*[@id='ctl00_MainContent_rfvEmailAddress']")).isDisplayed();
 		yourNameIsRequired.isDisplayed();
 		return false;
 	}
